@@ -2,8 +2,4 @@
 
 setenv JLAB_ROOT /opt/jlab_software
 
-# Dawn
-set path = (/Applications/dawn_3_90b /sw/bin $path)
 
-# needed for all programs coming from Fink
-source /sw/bin/init.csh

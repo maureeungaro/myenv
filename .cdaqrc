@@ -1,0 +1,3 @@
+#!/bin/csh -f
+
+setenv JLAB_ROOT /net/cdaq/cdaql3data/jlab_software

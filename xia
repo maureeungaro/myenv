@@ -1,0 +1,14 @@
+#!/bin/csh -f
+
+  alias cia 'clear; rm core* ; rm higz_windows.dat; rm paw.metafile; rm last.kumac*; \
+             rm .nfs*; rm *~; rm .*~;  rm *.log; rm *bak; rm .saves-*; \
+             rm .pine-debug*; ls;'
+
+foreach d (`\ls -Rp | grep \/ | grep \: | awk -F\: '{print $1}'`)
+ echo $d
+ cd $d
+ cia
+ cd -
+end
+cia
+

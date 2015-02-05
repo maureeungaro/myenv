@@ -1,0 +1,29 @@
+#!/bin/csh -f
+
+setenv JLAB_ROOT /site/12gev_phys
+
+# For the new gcc
+# set path = (/apps/gcc/4.7.2/bin $path)
+# setenv LD_LIBRARY_PATH  /apps/gcc/4.7.2/lib64
+
+# for the new cmake
+set path = (/apps/cmake/bin $path)
+
+
+# CLAS6 software
+setenv CLAS6INC /group/clas/builds/64bit/STABLE/build/include
+setenv CLAS6BIN /group/clas/builds/64bit/STABLE/build/bin
+setenv CLAS6LIB /group/clas/builds/64bit/STABLE/build/lib
+setenv CERNLIB /usr/lib64/cernlib/2006/lib
+setenv PERL5LIB /group/clas/tools/caldb
+
+# clas path
+set path = (/group/clas/tools/caldb $CLAS6BIN $path)
+
+set path = (/apps/bin $path)
+set path = (/apps/cmake/bin $path)
+
+
+if(`hostname -s` == "jlabm1") then
+	set path = (/opt/local/bin $path)
+endif

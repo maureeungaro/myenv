@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+setenv JLAB_ROOT /opt/jlab_software
+
+

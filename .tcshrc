@@ -1,0 +1,35 @@
+#!/bin/csh -f
+
+set path = ( . $path)
+
+source ~/myenv/aliases.env
+source ~/myenv/misc.env
+
+# For macs (not jlab)
+if(`uname` == "Darwin" && `hostname -s` != "jlabm1") then
+	source ~/myenv/.darwinrc
+# For claspc machines
+else if(`hostname` == "claspc17.jlab.org" || `hostname` == "claspc26.jlab.org" ) then
+	source ~/myenv/.claspcrc
+# For DAQ machines
+else if(`hostname` == "cdaql3.jlab.org" ) then
+	source ~/myenv/.cdaqrc
+# For JLAB machines
+else if(`hostname -d | grep jlab | wc | awk '{print $1}'` != 0 || `hostname -a | grep jlab | wc | awk '{print $1}'` != 0 || `hostname | grep farm | wc | awk '{print $1}'` != 0 ) then
+	source ~/myenv/.jlabrc
+else if(`uname` == "Linux") then
+	source ~/myenv/.linuxrc
+endif
+
+# Leave this one here we may need later
+setenv MYRPM /home/ungaro
+
+
+#setenv GEMC  /opt/projects/gemc/releases/devel
+#setenv BANKS /opt/projects/banks/devel
+
+
+setenv JLAB_VERSION  1.2
+source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
+
+

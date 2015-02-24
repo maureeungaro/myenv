@@ -30,6 +30,8 @@ setenv MYRPM /home/ungaro
 
 
 setenv JLAB_VERSION  1.2
+#setenv OSRELEASE Linux_CentOS6.5-i686-gcc4.4.7
 source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 
+#source /site/12gev_phys/production.csh
 

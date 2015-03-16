@@ -10,6 +10,8 @@ set path = (/apps/cmake/bin $path)
 setenv CLASPREFIX /work/clas/clas12/ungaro/clas6-trunk
 setenv GCC /apps/gcc/4.8.0
 setenv CERNLIB /apps/cernlib/x86_64_rhel6_4.7.2/2005/lib
+setenv CERNLIB /usr/lib64/cernlib/2006/lib
+
 
 setenv PYTHONPATH ${CLASPREFIX}/lib/python
 

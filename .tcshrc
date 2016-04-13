@@ -25,12 +25,17 @@ endif
 setenv MYRPM /home/ungaro
 
 #setenv GEMC  /opt/projects/gemc/releases/devel
+#setenv GEMC_VERSION 2.3
 #setenv BANKS /opt/projects/banks/devel
 
 #source /site/12gev_phys/production.csh
 #source /site/12gev_phys/devel.csh
 
 setenv JLAB_ROOT /site/12gev_phys
+#setenv JLAB_ROOT /opt/jlab_software
+
 setenv JLAB_VERSION 1.3
 source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
+
+
 

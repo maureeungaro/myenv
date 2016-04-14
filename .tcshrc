@@ -6,9 +6,6 @@ source ~/myenv/aliases.env
 source ~/myenv/misc.env
 source ~/myenv/`machine.sh`
 
-setenv GEMC  /opt/projects/gemc/
-setenv BANKS /opt/projects/banks/devel
-
 setenv JLAB_VERSION devel
 source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
 

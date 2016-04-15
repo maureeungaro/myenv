@@ -4,5 +4,5 @@ setenv JLAB_ROOT /opt/jlab_software
 setenv MU /opt/projects/muEvent
 
 echo "Setting custom GEMC on "`hostname` "(.darwinrc)"
-setenv GEMC  /opt/projects/gemc/
+setenv GEMC  /opt/projects/gemc/devel
 setenv BANKS /opt/projects/banks/devel

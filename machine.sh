@@ -9,7 +9,7 @@ else if(`hostname` == "claspc17.jlab.org" || `hostname` == "claspc26.jlab.org" )
 else if(`hostname` == "cdaql3.jlab.org" ) then
 	echo ".cdaqrc"
 # For JLAB machines
-else if(`hostname -f | awk -F. '{print $2}'` == "jlab") then
+else if(-d /apps/gcc/5.2.0/install/bin ) then
 	echo ".jlabrc"
 else if(`uname` == "Linux") then
 	echo ".linuxrc"

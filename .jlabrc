@@ -70,3 +70,4 @@ endif
 # scons cleanconf will clear the previous conf (not working though?)
 # scons -j20 user_ana will build user_ana
 #
+#  muEvent should recompile w/o problems.

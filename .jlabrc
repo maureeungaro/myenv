@@ -18,7 +18,7 @@ setenv CLASPREFIX /work/clas/clas12/ungaro/clas6-trunk
 setenv CLAS6INC ${CLASPREFIX}/build/include
 setenv CLAS6LIB ${CLASPREFIX}/build/lib
 setenv CLAS6BIN ${CLASPREFIX}/build/bin
-setenv ALIGNBITS 32
+setenv ALIGNBITS 64
 setenv PYTHONPATH ${CLASPREFIX}/lib/python:${PYTHONPATH}
 
 
@@ -60,3 +60,13 @@ endif
 if(`hostname -s` == "jlabm1") then
 	set path = (/opt/local/bin $path)
 endif
+
+
+
+# Notes to compile clas6 software
+# paste the gcc 4.8 line after the normal environment
+#
+# scons --help will show current options being used
+# scons cleanconf will clear the previous conf (not working though?)
+# scons -j20 user_ana will build user_ana
+#

@@ -26,7 +26,7 @@ setenv PYTHONPATH ${CLASPREFIX}/lib/python:${PYTHONPATH}
 setenv CLAS_PARMS /group/clas/parms
 setenv LD_LIBRARY_PATH ${CLAS6LIB}:${LD_LIBRARY_PATH}
 
-setenv PATH ${PREFIX}/scripts:${CLAS6BIN}:${PATH}
+setenv PATH ${CLASPREFIX}/scripts:${CLAS6BIN}:${PATH}
 set path = (/group/clas/tools/caldb $CLAS6BIN /apps/bin $path)
 
 # perl scripts for clasdb

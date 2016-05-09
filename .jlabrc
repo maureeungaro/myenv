@@ -8,6 +8,9 @@ set path = (/apps/cmake/bin $path)
 if( ! $?LD_LIBRARY_PATH) then
 	setenv LD_LIBRARY_PATH ""
 endif
+if( ! $?PYTHONPATH) then
+	setenv PYTHONPATH ""
+endif
 
 
 # CLAS6 software

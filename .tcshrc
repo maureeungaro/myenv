@@ -6,16 +6,9 @@ source ~/myenv/aliases.env
 source ~/myenv/misc.env
 source ~/myenv/`machine.sh`
 
-#setenv JLAB_VERSION 1.3
-#source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
-
-#setenv GEMC_VERSION 2.4
-#setenv GEMC /site/12gev_phys/1.3/Linux_CentOS6.5-x86_64-gcc4.4.7/gemc/2.4
-#source /site/12gev_phys/production.csh 1.3 keepmine
-#setenv JLAB_VERSION 1.3
-#source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
+setenv JLAB_VERSION devel
+source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
 
 
-source /site/12gev_phys/production.csh 2.0
 
 

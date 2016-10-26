@@ -1,4 +1,8 @@
 #!/bin/csh -f
+
+set path = (/usr/bin /bin $path)
+
+
 # For macs (not jlab)
 if(`uname` == "Darwin" && `hostname -s` != "jlabm1") then
 	echo ".darwinrc"

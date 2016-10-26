@@ -4,7 +4,7 @@ set path = ( . $path)
 
 source ~/myenv/aliases.env
 source ~/myenv/misc.env
-source ~/myenv/`machine.sh`
+source ~/myenv/`~/myenv/machine.sh`
 
 setenv JLAB_VERSION 1.3
 source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine

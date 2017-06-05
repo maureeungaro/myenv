@@ -8,7 +8,7 @@ setenv GEMC     /opt/projects/gemc/source
 set LH = `scutil --get LocalHostName`
 set MMP = "no"
 
-if($LH == "MauriMP") then
+if($LH == "MauriMP" || $LH == "MauriMBP") then
 	set MMP = "yes"
 endif
 

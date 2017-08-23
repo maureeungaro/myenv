@@ -3,11 +3,16 @@
 setenv JLAB_ROOT /opt/jlab_software
 setenv MU /opt/projects/muEvent
 
-
 setenv GEMC     /opt/projects/gemc/source
-set LH = `scutil --get LocalHostName`
 
-if($LH == "MP") then
+set LH = `scutil --get LocalHostName`
+set MMP = "no"
+
+if($LH == "MauriMP" || $LH == "MauriMBP") then
+	set MMP = "yes"
+endif
+
+if($MMP == "yes") then
 	setenv BANKS    /opt/projects/banks/devel
 	setenv MLIBRARY /opt/projects/mlibrary
 endif
@@ -15,7 +20,7 @@ endif
 if ($?prompt) then
 	echo "Custom settings on "`hostname`" (.darwinrc):"
 	echo " - GEMC:     "$GEMC
-	if($LH == "MP") then
+	if($MMP == "yes") then
 		echo " - BANKS:    "$BANKS
 		echo " - MLIBRARY: "$MLIBRARY
 	endif

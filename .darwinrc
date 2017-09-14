@@ -3,7 +3,6 @@
 setenv JLAB_ROOT /opt/jlab_software
 setenv MU /opt/projects/muEvent
 
-setenv GEMC     /opt/projects/gemc/source
 
 set LH = `scutil --get LocalHostName`
 set MMP = "no"
@@ -13,6 +12,7 @@ if($LH == "MauriMP" || $LH == "MauriMBP") then
 endif
 
 if($MMP == "yes") then
+	setenv GEMC     /opt/projects/gemc/source
 	setenv BANKS    /opt/projects/banks/devel
 	setenv MLIBRARY /opt/projects/mlibrary
 endif

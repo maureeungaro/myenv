@@ -13,7 +13,7 @@ endif
 
 if($MMP == "yes") then
 	setenv GEMC     /opt/projects/gemc/source
-	setenv BANKS    /opt/projects/banks/devel
+	setenv BANKS    /opt/projects/banks
 	setenv MLIBRARY /opt/projects/mlibrary
 endif
 

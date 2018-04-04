@@ -7,7 +7,7 @@ setenv MU /opt/projects/muEvent
 set LH = `scutil --get LocalHostName`
 set MMP = "no"
 
-if($LH == "MauriMP" || $LH == "MauriMBP") then
+if($LH == "mauri" || $LH == "MauriMBP") then
 	set MMP = "yes"
 endif
 

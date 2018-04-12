@@ -7,8 +7,7 @@ source ~/myenv/misc.env
 source ~/myenv/`~/myenv/machine.sh`
 
 if($ISMAURIWORK == "1") then
-    setenv JLAB_VERSION 2.2
-    source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
+    source $JLAB_ROOT/devel/ce/jlab.csh keepmine
 endif
 
 

@@ -50,14 +50,16 @@ setenv TCLLIB /usr/lib
 setenv MU ~/projects/muEvent
 
 
-# gcc 4.8.0
-# these needs to be executed after the sourcing
-if(`hostname -s` == "fakeCondition") then
-	setenv PATH /apps/gcc/4.8.0/bin:$PATH
-	setenv LD_LIBRARY_PATH /apps/gcc/4.8.0/lib64:$LD_LIBRARY_PATH
-	setenv CXX /apps/gcc/4.8.0/bin/c++
-	setenv CC  /apps/gcc/4.8.0/bin/gcc
-endif
+# CLARA and installation:
+
+setenv CLARA_HOME ~/myClara/
+setenv COATJAVA $CLARA_HOME/plugins/clas12/
+
+# To install:
+# cd $CLARA_HOME/..
+# wget https://claraweb.jlab.org/clara/_downloads/install-claracre-clas.sh
+# chmod u+x install-claracre-clas.sh
+# ./install-claracre-clas.sh -v 5b.4.0
 
 
 if(`hostname -s` == "jlabm1") then

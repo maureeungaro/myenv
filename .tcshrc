@@ -7,7 +7,7 @@ source ~/myenv/misc.env
 source ~/myenv/`~/myenv/machine.sh`
 
 if($ISMAURIWORK == "1") then
-    source $JLAB_ROOT/devel/ce/jlab.csh keepmine
+    source $JLAB_ROOT/2.3/ce/jlab.csh keepmine
 endif
 
 

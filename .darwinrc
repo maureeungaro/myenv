@@ -8,7 +8,7 @@ set LH = `scutil --get LocalHostName`
 set MMP = "no"
 setenv ISMAURIWORK 0
 
-if($LH == "mauri" || $LH == "MauriMBP") then
+if($LH == "mauri-imac" || $LH == "MauriMBP") then
 	set MMP = "yes"
     setenv ISMAURIWORK 1
 endif

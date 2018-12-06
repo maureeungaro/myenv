@@ -6,8 +6,12 @@ source ~/myenv/aliases.env
 source ~/myenv/misc.env
 source ~/myenv/`~/myenv/machine.sh`
 
+# Only source JLABSH if it's the work computer and if it exists
 if($ISMAURIWORK == "1") then
-    source $JLAB_ROOT/2.3/ce/jlab.csh keepmine
+	set JLABSH = $JLAB_ROOT/2.3/ce/jlab.csh
+	if (-f $JLABSH ) then
+    	source $JLABSH keepmine
+	endif
 endif
 
 

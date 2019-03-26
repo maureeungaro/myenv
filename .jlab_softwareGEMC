@@ -1,1 +1,1 @@
-clhep geant4 qt ccdb mlibrary scons gemc
+clhep geant4 qt ccdb mlibrary scons xercesc evio gemc

@@ -2,6 +2,8 @@
 
 set path = ( . $path)
 
+setenv ISMAURIWORK 0
+
 source ~/myenv/aliases.env
 source ~/myenv/misc.env
 source ~/myenv/`~/myenv/machine.sh`

@@ -13,8 +13,9 @@ else if(`hostname` == "claspc17.jlab.org" || `hostname` == "claspc26.jlab.org" )
 else if(`hostname` == "cdaql3.jlab.org" ) then
 	echo ".cdaqrc"
 # For JLAB machines
-else if(-d /apps/gcc/5.2.0/install/bin ) then
+else if(`hostname -d` == "jlab.org" ) then
 	echo ".jlabrc"
+	setenv ISMAURIWORK 1
 else if(`uname` == "Linux") then
 	echo ".linuxrc"
 endif

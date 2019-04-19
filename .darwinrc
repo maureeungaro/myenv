@@ -9,7 +9,7 @@ set MMP = "no"
 if($LH == "mauri-imac" || $LH == "MauriMBP") then
 	set MMP = "yes"
 	setenv ISMAURIWORK 1
-	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/4.3.1
+	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/$CLAS12TAG
 	setenv FIELD_DIR     /opt/jlab_software/noarch/data
 endif
 

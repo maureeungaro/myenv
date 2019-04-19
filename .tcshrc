@@ -8,7 +8,8 @@ source ~/myenv/`~/myenv/machine.sh`
 
 # Only source JLABSH if it's the work computer and if it exists
 if($ISMAURIWORK == "1") then
-	set JLABSH = $JLAB_ROOT/devel/ce/jlab.csh
+	setenv JLAB_VERSION devel
+	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/4.3.1
 	setenv FIELD_DIR     /opt/jlab_software/noarch/data/
 	if (-f $JLABSH ) then

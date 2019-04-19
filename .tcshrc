@@ -10,8 +10,6 @@ source ~/myenv/`~/myenv/machine.sh`
 if($ISMAURIWORK == "1") then
 	setenv JLAB_VERSION devel
 	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
-	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/4.3.1
-	setenv FIELD_DIR     /opt/jlab_software/noarch/data/
 	if (-f $JLABSH ) then
     		source $JLABSH keepmine
 			echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR

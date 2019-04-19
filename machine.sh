@@ -15,7 +15,6 @@ else if(`hostname` == "cdaql3.jlab.org" ) then
 # For JLAB machines
 else if(`hostname -d` == "jlab.org" ) then
 	echo ".jlabrc"
-	setenv ISMAURIWORK 1
 else if(`uname` == "Linux") then
 	echo ".linuxrc"
 endif

@@ -15,9 +15,12 @@ if($ISMAURIWORK == "1") then
 	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 	if (-f $JLABSH ) then
     		source $JLABSH keepmine
-			echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR
-			echo " - FIELD_DIR: " $FIELD_DIR
-			echo
+			# only print this if GEMC_VERSION has been set
+			if($?GEMC_VERSION) then
+				echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR
+				echo " - FIELD_DIR: " $FIELD_DIR
+				echo
+			endif
 	endif
 endif
 

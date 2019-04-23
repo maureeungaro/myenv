@@ -22,8 +22,11 @@ endif
 if ($?prompt) then
 	echo "Custom settings on "`hostname`" (.darwinrc):"
 	if($MMP == "yes") then
-        	echo " - GEMC:     "$GEMC
-		echo " - BANKS:    "$BANKS
-		echo " - MLIBRARY: "$MLIBRARY
+		# only print this if GEMC_VERSION has been set
+		if($?GEMC_VERSION) then
+			echo " - GEMC:     "$GEMC
+			echo " - BANKS:    "$BANKS
+			echo " - MLIBRARY: "$MLIBRARY
+	endif
 	endif
 endif

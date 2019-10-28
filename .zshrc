@@ -1,5 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ungaro/.oh-my-zsh"
+
+# Notice: zsh tab completion messes up command line formatting.
+# Solution: surround all non-ASCII characters (like emojis) with %{%G<CHARACTER>%}
+# PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}%{%G➜%} )"
+# ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}%{%G✗%}"
 ZSH_THEME="robbyrussell"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -10,7 +15,6 @@ ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 source ~/myenv/zaliases.env
 
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

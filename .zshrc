@@ -15,6 +15,9 @@ ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 source ~/myenv/zaliases.env
 
+# disable sharing history
+unsetopt share_history
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -6,7 +6,7 @@ setenv MU /opt/projects/muEvent
 set LH = `scutil --get LocalHostName`
 set MMP = "no"
 
-if($LH == "mauri-imac" || $LH == "MauriMBP") then
+if($LH == "mauri-imac" || $LH == "MauriMBP" || $LH == "enpungarombp") then
 	set MMP = "yes"
 	setenv ISMAURIWORK 1
 	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/$CLAS12TAG

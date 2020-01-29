@@ -1,7 +1,7 @@
 #!/bin/csh -f
 
-# loading modules and other stuff important for jlab
-source /site/env/syscshrc
+# loading jlab modules 
+module use /apps/modulefiles
 
 setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1

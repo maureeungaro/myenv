@@ -11,7 +11,7 @@ source ~/myenv/misc.env
 source ~/myenv/`~/myenv/machine.sh`
 
 # Only source JLABSH if it's the work computer and if it exists
-if($ISMAURIWORK == "1") then
+if($ISMAURIWORK == "2") then
 	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 	if (-f $JLABSH ) then
     		source $JLABSH keepmine

@@ -1,10 +1,12 @@
 #!/bin/csh -f
 
+# loading modules and other stuff important for jlab
+source /site/env/syscshrc
+
 setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1
 setenv GEMC_DATA_DIR /group/clas12/gemc/$CLAS12TAG
 setenv FIELD_DIR /site/12gev_phys/noarch/data
-setenv QT_VERSION 5.10.1
 
 # for the new cmake
 set path = (/apps/cmake/bin $path)

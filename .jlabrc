@@ -1,7 +1,10 @@
 #!/bin/csh -f
 
-# loading jlab modules 
+# loading jlab modules
 module use /apps/modulefiles
+
+module load cmake/3.5.1
+module load gcc/9.2.0
 
 setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1

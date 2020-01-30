@@ -1,24 +1,39 @@
 #!/bin/csh -f
 
-set path = ( . $path)
+echo
 
 setenv ISMAURIWORK 0
 setenv JLAB_VERSION devel
-setenv CLAS12TAG 4.3.1
+setenv CLAS12TAG 4.3.2
 
-source ~/myenv/aliases.env
-source ~/myenv/misc.env
-source ~/myenv/`~/myenv/machine.sh`
+if (! $?MAURIALIASES ) then
+	setenv MAURIALIASES 1
+	source ~/myenv/aliases.env
+endif
+
+if (! $?MAURIMISC ) then
+	setenv MAURIMISC 1
+	source ~/myenv/misc.env
+endif
+
+if (! $?MAURIMACHINE ) then
+	setenv MAURIMACHINE 1
+	source ~/myenv/`~/myenv/machine.sh`
+	if ($?prompt) then
+		echo " > Setting Machine Specific Settings"
+	endif
+endif
+
 
 # Only source JLABSH if it's the work computer and if it exists
-if($ISMAURIWORK == "2") then
+if($ISMAURIWORK == "1") then
 	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 	if (-f $JLABSH ) then
     		source $JLABSH keepmine
 			# only print this if GEMC_VERSION has been set
-			if($?GEMC_VERSION) then
+			if($?prompt && $?GEMC_VERSION) then
 				echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR
-				echo " - FIELD_DIR: " $FIELD_DIR
+				echo " - FIELD_DIR:     " $FIELD_DIR
 				echo
 			endif
 	endif

@@ -1,20 +1,18 @@
 #!/bin/csh -f
 
-set path = (/usr/bin /bin $path)
+# Reminder: this is a script executed by a source script
+# so do not check on prompt
 
-
-# For macs (not jlab)
-if(`uname` == "Darwin" && `hostname -s` != "jlabm1") then
+# Darwin
+if(`uname` == "Darwin") then
 	echo ".darwinrc"
-# For claspc machines
-else if(`hostname` == "claspc17.jlab.org" || `hostname` == "claspc26.jlab.org" ) then
-	echo "claspcrc"
-# For DAQ machines
-else if(`hostname` == "cdaql3.jlab.org" ) then
-	echo ".cdaqrc"
-# For JLAB machines
+# Linux: distinguishing between jlab and non-jlab
 else if(`hostname -d` == "jlab.org" ) then
 	echo ".jlabrc"
-else if(`uname` == "Linux") then
+else
 	echo ".linuxrc"
 endif
+
+
+
+

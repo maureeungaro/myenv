@@ -4,29 +4,26 @@ setenv JLAB_ROOT /opt/jlab_software
 setenv MU /opt/projects/muEvent
 
 set LH = `scutil --get LocalHostName`
-set MMP = "no"
 
 if($LH == "mauri-imac" || $LH == "MauriMBP" || $LH == "enpungarombp") then
-	set MMP = "yes"
 	setenv ISMAURIWORK 1
+	setenv GEMC          /opt/projects/gemc/source
+	setenv BANKS         /opt/projects/banks
+	setenv MLIBRARY      /opt/projects/mlibrary
+
 	setenv GEMC_DATA_DIR /opt/projects/gemc/clas12Tags/$CLAS12TAG
 	setenv FIELD_DIR     /opt/jlab_software/noarch/data
-endif
 
-if($MMP == "yes") then
-	setenv GEMC     /opt/projects/gemc/source
-	setenv BANKS    /opt/projects/banks
-	setenv MLIBRARY /opt/projects/mlibrary
-endif
+	if ($?prompt) then
+		echo " > Custom settings on .darwinrc:"
+			# only print this if GEMC has been set already (meaning, it's custom)
+			if($?GEMC) then
+				echo "   - GEMC:     "$GEMC
+				echo "   - BANKS:    "$BANKS
+				echo "   - MLIBRARY: "$MLIBRARY
+				echo
+		endif
 
-if ($?prompt) then
-	echo "Custom settings on "`hostname`" (.darwinrc):"
-	if($MMP == "yes") then
-		# only print this if GEMC_VERSION has been set
-		if($?GEMC_VERSION) then
-			echo " - GEMC:     "$GEMC
-			echo " - BANKS:    "$BANKS
-			echo " - MLIBRARY: "$MLIBRARY
 	endif
-	endif
+
 endif

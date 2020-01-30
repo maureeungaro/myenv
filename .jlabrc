@@ -2,9 +2,10 @@
 
 # loading jlab modules
 module use /apps/modulefiles
-
-module load cmake/3.5.1
+module load cmake/3.13.4
 module load gcc/9.2.0
+
+echo WHY THIS IS HAPPENING
 
 setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1
@@ -59,11 +60,9 @@ setenv TCLLIB /usr/lib
 setenv MU ~/projects/muEvent
 
 
-# CLARA and installation:
-
-setenv CLARA_HOME ~/myClara/
-setenv COATJAVA $CLARA_HOME/plugins/clas12/
-
+# CLARA
+# setenv CLARA_HOME ~/myClara/
+# setenv COATJAVA $CLARA_HOME/plugins/clas12/
 # To install:
 # cd $CLARA_HOME/..
 # wget https://claraweb.jlab.org/clara/_downloads/install-claracre-clas.sh
@@ -74,7 +73,6 @@ setenv COATJAVA $CLARA_HOME/plugins/clas12/
 if(`hostname -s` == "jlabm1") then
 	set path = (/opt/local/bin $path)
 endif
-
 
 
 # Notes to compile clas6 software

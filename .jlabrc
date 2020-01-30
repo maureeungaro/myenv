@@ -5,8 +5,6 @@ module use /apps/modulefiles
 module load cmake/3.13.4
 module load gcc/9.2.0
 
-echo WHY THIS IS HAPPENING
-
 setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1
 setenv GEMC_DATA_DIR /group/clas12/gemc/$CLAS12TAG

@@ -2,6 +2,7 @@
 echo
 
 setenv ISMAURIWORK 0
+setenv ISJLAB 0
 setenv JLAB_VERSION devel
 setenv CLAS12TAG 4.3.2
 
@@ -17,11 +18,11 @@ endif
 
 setenv CLAS6SOFT 0 # if set to 1, will load jlab clas6 software settings
 if (! $?MAURIMACHINE ) then
-	setenv MAURIMACHINE 1
-	source ~/myenv/`~/myenv/machine.sh`
 	if ($?prompt) then
 		echo " > Setting Machine Specific Settings"
 	endif
+	setenv MAURIMACHINE 1
+	source ~/myenv/`~/myenv/machine.sh`
 endif
 
 if( $ISJLAB == "1") then

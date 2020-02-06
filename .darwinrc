@@ -1,5 +1,3 @@
-#!/bin/csh -f
-
 setenv JLAB_ROOT /opt/jlab_software
 setenv MU /opt/projects/muEvent
 

@@ -1,5 +1,3 @@
-#!/bin/csh -f
-
 set symbol = $1
 
 foreach f (`\ls *.a *.dylib`)

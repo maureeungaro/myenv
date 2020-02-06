@@ -1,3 +1,5 @@
+#!/bin/csh -f
+
 echo
 
 setenv ISMAURIWORK 0
@@ -14,6 +16,8 @@ if (! $?MAURIMISC ) then
 	source ~/myenv/misc.env
 endif
 
+
+setenv CLAS6SOFT 0 # if set to 1, will load jlab clas6 software settings
 if (! $?MAURIMACHINE ) then
 	setenv MAURIMACHINE 1
 	source ~/myenv/`~/myenv/machine.sh`

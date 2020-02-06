@@ -1,5 +1,3 @@
-#!/bin/csh -f
-
 # Reminder: this is a script executed by a source script
 # so do not check on prompt
 

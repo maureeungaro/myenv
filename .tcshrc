@@ -24,7 +24,7 @@ if (! $?MAURIMACHINE ) then
 	endif
 endif
 
-if( $CLAS6SOFT == "1") then
+if( $ISJLAB == "1") then
 	source /site/12gev_phys/softenv.csh $JLAB_VERSION keepmine
 else if( $ISMAURIWORK == "1") then
 	# Only source JLABSH if it's the work computer and if it exists

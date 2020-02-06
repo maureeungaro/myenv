@@ -2,7 +2,9 @@ setenv JLAB_ROOT /site/12gev_phys
 setenv ISMAURIWORK 1
 setenv GEMC_DATA_DIR /group/clas12/gemc/$CLAS12TAG
 setenv FIELD_DIR /site/12gev_phys/noarch/data
+setenv ISJLAB 1
 
 if ( $CLAS6SOFT == "1" ) then
 	source ~/myenv/.jlabClas6
 endif
+

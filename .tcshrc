@@ -1,5 +1,4 @@
-#!/bin/csh -f
-
+#!/bin/tcsh -f
 echo
 
 setenv ISMAURIWORK 0
@@ -16,7 +15,6 @@ if (! $?MAURIMISC ) then
 	source ~/myenv/misc.env
 endif
 
-
 setenv CLAS6SOFT 0 # if set to 1, will load jlab clas6 software settings
 if (! $?MAURIMACHINE ) then
 	setenv MAURIMACHINE 1
@@ -26,20 +24,19 @@ if (! $?MAURIMACHINE ) then
 	endif
 endif
 
-
-# Only source JLABSH if it's the work computer and if it exists
-if($ISMAURIWORK == "1") then
+if( $CLAS6SOFT == "1") then
+	source /site/12gev_phys/softenv.csh $JLAB_VERSION keepmine
+else if( $ISMAURIWORK == "1") then
+	# Only source JLABSH if it's the work computer and if it exists
 	set JLABSH = $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh
 	if (-f $JLABSH ) then
     		source $JLABSH keepmine
 			# only print this if GEMC_VERSION has been set
-			if($?prompt && $?GEMC_VERSION) then
-				echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR
-				echo " - FIELD_DIR:     " $FIELD_DIR
-				echo
-			endif
 	endif
 endif
 
-
-
+if($?prompt && $?GEMC_VERSION) then
+	echo " - GEMC_DATA_DIR: " $GEMC_DATA_DIR
+	echo " - FIELD_DIR:     " $FIELD_DIR
+	echo
+endif

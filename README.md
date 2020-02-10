@@ -6,7 +6,7 @@
 
 # ZSH goodies
 
-multiIO: 
+## multiIO: 
 
 system_profiler SPHardwareDataType >hardwareprofile.txt | awk '/Serial Number/ { print $4 }' >&1 >serialnumber.txt
 
@@ -16,7 +16,7 @@ You can use the ** to denote an arbitrary string that can span multiple director
 echo /opt/jlab_software/**/scons_bm
 
 
-variable type:
+## variable type:
 
 fpath is function path
 
@@ -26,11 +26,11 @@ array-special
 scalar-special
 
 
-Also nice: 
+## Also nice: 
 
 path+=~/bin
 
-Suffix Aliases
+## Suffix Aliases
 
 alias -s txt="open -t"
 When you then type a path ending with .txt and no command, zsh will execute open -t /path/to/file.txt.
@@ -40,3 +40,17 @@ You can use other command line tools for the suffix alias:
 
 alias -s log="tail -f"
 Then, typing /var/log/install.log will show the last lines of that file and update the output when the file changes
+
+
+
+## splitting: zsh does not split
+
+wordlist="one two three"
+wordarray=( $wordlist )
+
+for word in $wordarray; do
+echo "->$word<-"
+done
+
+#output
+->one two three<-

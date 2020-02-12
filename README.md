@@ -54,3 +54,33 @@ done
 
 #output
 ->one two three<-
+
+
+## file list
+
+fileList=(/Applications/*)
+
+print $#list   number of files in that dir
+
+print -l $list[1,3]   print between 1 and 2  
+
+
+
+## hash variables
+
+typeset -A hash
+
+hash[brown]="Mmm..  hash browns"
+
+hash[table]="clever data structure"
+ 
+print ${hash[brown]}
+
+
+## loops
+
+echo "Bash version ${BASH_VERSION}..."
+for i in {0..10..2}
+do 
+echo "Welcome $i times"
+done

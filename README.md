@@ -56,6 +56,17 @@ done
 ->one two three<-
 
 
+
+so? how to split?
+
+array=(${(ps:\n:)"$(cmd)"})
+
+p is to enable those \x expansions. As ps:\n: is a common one, it's got a shorter alias: f (to split on line feeds):
+
+array=(${(f)"$(cmd)"})
+
+Example: see zfunction dockerRemoveAllContainers
+
 ## file list
 
 fileList=(/Applications/*)

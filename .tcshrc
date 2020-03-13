@@ -5,6 +5,7 @@ setenv ISMAURIWORK 0
 setenv ISJLAB 0
 setenv JLAB_VERSION devel
 setenv CLAS12TAG 4.3.2
+setenv GEANT4_VERSION 4.10.06MT
 
 if (! $?MAURIALIASES ) then
 	setenv MAURIALIASES 1

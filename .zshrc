@@ -31,5 +31,6 @@ else
 	echo "modules are not installed, use brew install modules"
 fi
 
-
+# installed by iterm2
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

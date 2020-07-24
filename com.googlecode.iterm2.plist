@@ -94,13 +94,13 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1282 240 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>69 26 990 1084 0 0 2560 1417 </string>
+	<string>290 62 2152 1159 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>484 21 1403 785 0 0 2560 1417 </string>
+	<string>227 105 990 666 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>876 211 1298 659 0 0 2560 1417 </string>
+	<string>687 89 1005 642 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1453 31 990 642 0 0 2560 1417 </string>
+	<string>999 51 990 642 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>84 579 2649 795 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -974,6 +974,14 @@
 					<key>regex</key>
 					<string>scp</string>
 				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>regex</key>
+					<string>jlabl</string>
+				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
 			<true/>
@@ -1022,14 +1030,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{773, 904}</string>
+		<string>{1329, 988}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4DEABE93-E03C-4FCF-A1B5-A112066AF76D</string>
 	<key>NoSyncLastTipTime</key>
-	<real>616688465.23992002</real>
+	<real>617291791.73435605</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
+	<integer>11</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1754,6 +1762,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSuppressDownloadConfirmation</key>
+	<true/>
+	<key>NoSyncSuppressDownloadConfirmation_selection</key>
+	<integer>0</integer>
 	<key>NoSyncSuppressRestartSessionConfirmationAlert</key>
 	<true/>
 	<key>NoSyncSuppressRestartSessionConfirmationAlert_selection</key>
@@ -1762,10 +1774,16 @@
 	<real>615824102.49638402</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>000</string>
+		<string>0006</string>
+		<string>0003</string>
 		<string>0000</string>
+		<string>0007</string>
+		<string>0004</string>
 		<string>0001</string>
+		<string>000</string>
+		<string>0005</string>
 		<string>0002</string>
+		<string>0008</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1817,7 +1835,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-17T16:02:33Z</date>
+	<date>2020-07-23T16:03:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>

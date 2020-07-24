@@ -32,5 +32,6 @@ else
 fi
 
 # installed by iterm2
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# copied to myenv
+test -e "${HOME}/myenv/.iterm2_shell_integration.zsh" && source "${HOME}/myenv/.iterm2_shell_integration.zsh"
 

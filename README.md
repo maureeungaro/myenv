@@ -79,7 +79,7 @@ print -l $list[1,3]   print between 1 and 2
 
 ## hash variables
 
-typeset -A hash
+declare -A hash
 
 hash[brown]="Mmm..  hash browns"
 

@@ -94,9 +94,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1282 240 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>290 62 2152 1159 0 0 2560 1417 </string>
+	<string>250 115 990 1135 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>227 105 990 666 0 0 2560 1417 </string>
+	<string>2727 183 2390 1091 2560 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>687 89 1005 642 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -277,6 +277,18 @@
 			<string>/Users/ungaro/Dropbox/work/terminalImages/matrix.jpg</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
+			<key>Badge Font</key>
+			<string>AvenirNext-Bold</string>
+			<key>Badge Max Height</key>
+			<real>0.20000000000000001</real>
+			<key>Badge Max Width</key>
+			<real>0.5</real>
+			<key>Badge Right Margin</key>
+			<real>10</real>
+			<key>Badge Text</key>
+			<string>\(session.commandLine)</string>
+			<key>Badge Top Margin</key>
+			<real>10</real>
 			<key>Blend</key>
 			<real>0.6623248228092784</real>
 			<key>Blink Allowed</key>
@@ -1011,6 +1023,11 @@
 	<array>
 		<string>3.3.12</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Avenir Next</string>
+		<string>Helvetica</string>
+	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncConfirmRunOpenFile</key>
@@ -1030,14 +1047,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1329, 988}</string>
+		<string>{1497, 1036}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4DEABE93-E03C-4FCF-A1B5-A112066AF76D</string>
 	<key>NoSyncLastTipTime</key>
-	<real>617291791.73435605</real>
+	<real>617548475.93081701</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>12</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1774,6 +1791,7 @@
 	<real>615824102.49638402</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0009</string>
 		<string>0006</string>
 		<string>0003</string>
 		<string>0000</string>
@@ -1781,9 +1799,10 @@
 		<string>0004</string>
 		<string>0001</string>
 		<string>000</string>
+		<string>0008</string>
 		<string>0005</string>
 		<string>0002</string>
-		<string>0008</string>
+		<string>0010</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1835,7 +1854,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-23T16:03:16Z</date>
+	<date>2020-07-26T16:03:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>

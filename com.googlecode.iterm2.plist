@@ -286,7 +286,7 @@
 			<key>Badge Right Margin</key>
 			<real>10</real>
 			<key>Badge Text</key>
-			<string>\(session.commandLine)</string>
+			<string>\(user.badge)\(session.commandLine)</string>
 			<key>Badge Top Margin</key>
 			<real>10</real>
 			<key>Blend</key>
@@ -1290,6 +1290,14 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.badge</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>tab</string>
@@ -1463,6 +1471,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.user.badge</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>id</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1603,6 +1619,14 @@
 				<true/>
 				<key>name</key>
 				<string>iterm2.localhostName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.user.badge</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>

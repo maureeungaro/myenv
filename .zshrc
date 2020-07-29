@@ -13,7 +13,7 @@
 
 export ISMAURIWORK=0
 export JLAB_VERSION=devel
-export CLAS12TAG=4.3.2
+export CLAS12TAG=4.4.0
 
 # aliases and functions are not exported in subshells
 # so sourcing these all the times
@@ -24,12 +24,21 @@ source ~/myenv/zfunctions.env
 
 # modules
 zmodules=/usr/local/opt/modules/init/zsh
+
+case `hostname -s` in
+	ifarm1801|ifarm1801|ifarm1802)
+		zmodules=/group/clas12/packages/setup.sh
+		;;
+esac
+
 if test -f "$zmodules"; then
-	source /usr/local/opt/modules/init/zsh
+	source "$zmodules"
 	echo ZSH Modules Loaded
 else
 	echo "modules are not installed, use brew install modules"
 fi
+
+
 
 # installed by iterm2
 # copied to myenv so it's available at other locations

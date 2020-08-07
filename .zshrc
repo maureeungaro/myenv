@@ -18,9 +18,14 @@ export CLAS12TAG=4.4.0
 # aliases and functions are not exported in subshells
 # so sourcing these all the times
 
+# this fixes the cd duplicate problems 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 source ~/myenv/zconfig.env
 source ~/myenv/zaliases.env
 source ~/myenv/zfunctions.env
+
 
 # modules
 zmodules=/usr/local/opt/modules/init/zsh

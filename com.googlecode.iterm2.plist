@@ -94,9 +94,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1282 240 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>181 22 1130 755 0 0 2560 1417 </string>
+	<string>181 79 1130 691 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>145 388 1130 691 0 0 2560 1417 </string>
+	<string>486 300 1594 1090 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>897 602 1130 712 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -299,7 +299,7 @@
 			<key>Badge Right Margin</key>
 			<real>10</real>
 			<key>Badge Text</key>
-			<string>\(session.hostname)\n\(session.path)\n  \n\(user.badge)</string>
+			<string>\(session.hostname)\n\(session.path)\n\(user.gitBranch)\n\(user.gitDiff)\n \n\(user.badge)</string>
 			<key>Badge Top Margin</key>
 			<real>0.0</real>
 			<key>Blend</key>
@@ -1028,7 +1028,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1283, 983}</string>
+		<string>{1579, 828}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4DEABE93-E03C-4FCF-A1B5-A112066AF76D</string>
@@ -1106,6 +1106,22 @@
 				<true/>
 				<key>name</key>
 				<string>id</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.gitBranch</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.gitDiff</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1444,6 +1460,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.user.gitDiff</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1564,6 +1588,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.user.gitBranch</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.jobName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1571,6 +1603,14 @@
 		</array>
 		<key>2</key>
 		<array>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.user.gitDiff</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>isTerminal</key>
 				<true/>
@@ -1680,6 +1720,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentSession.user.gitRepo</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.user.gitBranch</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>

@@ -27,7 +27,6 @@ source ~/myenv/zaliases.env
 source ~/myenv/zfunctions.env
 
 # assign to badge env inspiration message
-inspiration
 
 
 # system modules
@@ -35,6 +34,9 @@ zmodules=/usr/local/opt/modules/init/zsh
 case `hostname -s` in
 	ifarm1801|ifarm1801|ifarm1802|ifarm1901)
 		zmodules=/group/clas12/packages/setup.sh
+		;;
+	casettaMini)
+		inspiration
 		;;
 esac
 

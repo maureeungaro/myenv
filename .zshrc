@@ -26,6 +26,9 @@ source ~/myenv/zconfig.env
 source ~/myenv/zaliases.env
 source ~/myenv/zfunctions.env
 
+# assign to badge env inspiration message
+inspiration
+
 
 # system modules
 zmodules=/usr/local/opt/modules/init/zsh

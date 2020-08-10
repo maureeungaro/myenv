@@ -94,9 +94,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1282 240 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>72 242 1130 712 0 0 2560 1417 </string>
+	<string>181 22 1130 755 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>145 369 1130 712 0 0 2560 1417 </string>
+	<string>145 388 1130 691 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>897 602 1130 712 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -293,13 +293,13 @@
 			<key>Badge Font</key>
 			<string>Helvetica-Bold</string>
 			<key>Badge Max Height</key>
-			<real>0.12</real>
+			<real>0.25</real>
 			<key>Badge Max Width</key>
-			<real>0.29999999999999999</real>
+			<real>0.45000000000000001</real>
 			<key>Badge Right Margin</key>
 			<real>10</real>
 			<key>Badge Text</key>
-			<string>\(session.hostname)\n\(session.path)\n\(user.badge)</string>
+			<string>\(session.hostname)\n\(session.path)\n  \n\(user.badge)</string>
 			<key>Badge Top Margin</key>
 			<real>0.0</real>
 			<key>Blend</key>
@@ -1035,7 +1035,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>618609370.34527194</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>20</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

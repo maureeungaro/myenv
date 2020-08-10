@@ -94,11 +94,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1282 240 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>66 25 1130 712 0 0 2560 1417 </string>
+	<string>72 242 1130 712 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>109 197 1130 712 0 0 2560 1417 </string>
+	<string>145 369 1130 712 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>53 43 1554 826 0 0 2560 1417 </string>
+	<string>897 602 1130 712 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>637 16 990 642 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -277,18 +277,31 @@
 			<string>/Users/ungaro/Dropbox/work/terminalImages/matrix.jpg</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
+			<key>Badge Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.824066162109375</real>
+				<key>Blue Component</key>
+				<real>0.584503173828125</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.38776636106761941</real>
+				<key>Red Component</key>
+				<real>0.29748692875728011</real>
+			</dict>
 			<key>Badge Font</key>
-			<string>AvenirNext-Bold</string>
+			<string>Helvetica-Bold</string>
 			<key>Badge Max Height</key>
-			<real>0.20000000000000001</real>
+			<real>0.12</real>
 			<key>Badge Max Width</key>
-			<real>0.5</real>
+			<real>0.29999999999999999</real>
 			<key>Badge Right Margin</key>
 			<real>10</real>
 			<key>Badge Text</key>
-			<string>\(user.badge)\(session.commandLine)</string>
+			<string>\(session.hostname)\n\(session.path)\n\(user.badge)</string>
 			<key>Badge Top Margin</key>
-			<real>10</real>
+			<real>0.0</real>
 			<key>Blend</key>
 			<real>0.6623248228092784</real>
 			<key>Blink Allowed</key>
@@ -374,7 +387,7 @@
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Icon</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -722,7 +735,7 @@
 			<key>Show Mark Indicators</key>
 			<true/>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Cursor Color</key>
@@ -906,6 +919,8 @@
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
 			<integer>4</integer>
+			<key>Title Components</key>
+			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.20112230329949241</real>
 			<key>Triggers</key>
@@ -1013,14 +1028,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1497, 1036}</string>
+		<string>{1283, 983}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4DEABE93-E03C-4FCF-A1B5-A112066AF76D</string>
 	<key>NoSyncLastTipTime</key>
-	<real>617809450.15320396</real>
+	<real>618609370.34527194</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>19</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1322,6 +1337,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>user.gitRepo</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>jobPid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1422,6 +1445,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.user.gitRepo</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1648,6 +1679,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentSession.user.gitRepo</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>id</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1779,13 +1818,17 @@
 	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>615824102.49638402</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>0004</string>
 		<string>0000</string>
 		<string>0010</string>
+		<string>0008</string>
 		<string>0007</string>
 		<string>0003</string>
+		<string>0013</string>
 		<string>0006</string>
 		<string>0002</string>
 		<string>000</string>
@@ -1794,8 +1837,9 @@
 		<string>0005</string>
 		<string>0001</string>
 		<string>0011</string>
-		<string>0008</string>
-		<string>0013</string>
+		<string>0015</string>
+		<string>0014</string>
+		<string>0016</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1847,7 +1891,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-31T16:04:25Z</date>
+	<date>2020-08-10T13:04:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>

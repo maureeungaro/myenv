@@ -35,7 +35,7 @@ case `hostname -s` in
 	ifarm1801|ifarm1801|ifarm1802|ifarm1901)
 		zmodules=/group/clas12/packages/setup.sh
 		;;
-	casettaMini)
+	casettaMini|MauriMBP)
 		inspiration
 		;;
 esac

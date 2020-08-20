@@ -4,7 +4,7 @@ echo
 setenv ISMAURIWORK 0
 setenv ISJLAB 0
 setenv JLAB_VERSION devel
-setenv CLAS12TAG 4.3.2
+setenv CLAS12TAG 4.4.0
 #setenv GEANT4_VERSION 4.10.06MT
 
 if (! $?MAURIALIASES ) then

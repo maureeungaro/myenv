@@ -18,14 +18,14 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
-	<key>CGFontRenderingFontSmoothingDisabled</key>
-	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>C278E0B8-681B-4A04-89CA-0D2DAB54C432</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
 	<key>DimOnlyText</key>
 	<true/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>EnableProxyIcon</key>
@@ -47,9 +47,9 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox</string>
+	<string>~/myenv</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{799, 448}</string>
+	<string>{800, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -92,19 +92,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>1282 240 799 448 0 0 2560 1417 </string>
+	<string>440 451 800 448 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>98 44 1818 772 0 0 2560 1417 </string>
+	<string>18 9 1130 697 0 0 1920 1175 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>63 -7 1130 715 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>63 51 1362 1261 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>348 19 1145 691 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>84 674 1130 691 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>141 71 990 642 0 0 2560 1417 </string>
+	<string>102 169 1130 697 0 0 1920 1175 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -301,7 +293,7 @@
 			<key>Badge Top Margin</key>
 			<real>0.0</real>
 			<key>Blend</key>
-			<real>0.60000057631602555</real>
+			<real>0.050000000000000003</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -309,7 +301,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>25.795995846816343</real>
+			<real>15.448309636919847</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -393,7 +385,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
-			<false/>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -939,7 +931,7 @@
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.073023083820714388</real>
+			<real>0.29417689303411054</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -1021,11 +1013,6 @@
 	<array>
 		<string>3.3.12</string>
 	</array>
-	<key>NoSyncBFPRecents</key>
-	<array>
-		<string>Avenir Next</string>
-		<string>Helvetica</string>
-	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncConfirmRunOpenFile</key>
@@ -1039,30 +1026,24 @@
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{1223, 840}</string>
+		<string>{702, 661}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
-	<string>4DEABE93-E03C-4FCF-A1B5-A112066AF76D</string>
-	<key>NoSyncLastTipTime</key>
-	<real>618609370.34527194</real>
+	<string>473F387C-6F41-4874-80D3-CD7783F36C48</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>29</integer>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>44</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>616601423.38852203</real>
+	<real>619824261.55238402</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
-	<true/>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -1370,14 +1351,6 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>user.gitRepo</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
 				<string>jobPid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1445,7 +1418,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.terminalWindowName</string>
+				<string>currentTab.currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1454,14 +1427,6 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.lastCommand</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentTab.currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1486,14 +1451,6 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentTab.currentSession.user.gitRepo</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1573,7 +1530,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.tty</string>
+				<string>currentTab.currentSession.user.gitBranch</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1605,7 +1562,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.user.gitBranch</string>
+				<string>currentTab.currentSession.tty</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1657,6 +1614,14 @@
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1728,23 +1693,23 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>window</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentSession.user.gitRepo</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
 				<string>currentSession.user.gitBranch</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.lastCommand</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>window</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1761,6 +1726,14 @@
 				<true/>
 				<key>name</key>
 				<string>titleOverride</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.jobPid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1873,39 +1846,8 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSuppressDownloadConfirmation</key>
-	<true/>
-	<key>NoSyncSuppressDownloadConfirmation_selection</key>
-	<integer>0</integer>
-	<key>NoSyncSuppressRestartSessionConfirmationAlert</key>
-	<true/>
-	<key>NoSyncSuppressRestartSessionConfirmationAlert_selection</key>
-	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
-	<real>615824102.49638402</real>
-	<key>NoSyncTipsDisabled</key>
-	<true/>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>0004</string>
-		<string>0000</string>
-		<string>0010</string>
-		<string>0008</string>
-		<string>0007</string>
-		<string>0003</string>
-		<string>0013</string>
-		<string>0006</string>
-		<string>0002</string>
-		<string>000</string>
-		<string>0012</string>
-		<string>0009</string>
-		<string>0005</string>
-		<string>0001</string>
-		<string>0011</string>
-		<string>0015</string>
-		<string>0014</string>
-		<string>0016</string>
-	</array>
+	<real>619554145.52709997</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OptionClickMovesCursor</key>
@@ -1956,11 +1898,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=16</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=33</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-02T17:21:12Z</date>
+	<date>2020-09-19T16:09:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>

@@ -28,7 +28,6 @@ source ~/myenv/zfunctions.env
 
 # assign to badge env inspiration message
 
-
 # system modules
 zmodules=/usr/local/opt/modules/init/zsh
 case `hostname -s` in

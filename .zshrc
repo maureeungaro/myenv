@@ -12,8 +12,6 @@
 
 
 export ISMAURIWORK=0
-export JLAB_VERSION=devel
-export CLAS12TAG=4.4.0
 
 # aliases and functions are not exported in subshells
 # so sourcing these all the times
@@ -26,9 +24,8 @@ source ~/myenv/zconfig.env
 source ~/myenv/zaliases.env
 source ~/myenv/zfunctions.env
 
-# assign to badge env inspiration message
 
-# system modules
+# system modules and badge
 zmodules=/usr/local/opt/modules/init/zsh
 case `hostname -s` in
 	ifarm1801|ifarm1801|ifarm1802|ifarm1901)
@@ -37,6 +34,21 @@ case `hostname -s` in
 	casettaMini|MauriMBP)
 		inspiration
 		;;
+    mauri-imac|enpungarombp)
+        export JLAB_VERSION=devel
+        export CLAS12TAG=4.4.0
+
+        ;;
+esac
+
+# username
+case `hostname -s` in
+    casettaMini)
+        export chi=maritino
+        ;;
+    mauri-imac|enpungarombp|MauriMBP|ifarm1801|ifarm1801|ifarm1802|ifarm1901)
+        export chi=ungaro
+        ;;
 esac
 
 if test -f "$zmodules"; then

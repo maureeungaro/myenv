@@ -54,7 +54,7 @@ esac
 
 if test -f "$zmodules"; then
 	source "$zmodules"
-	echo ZSH Modules Loaded
+	echo ZSH Modules Loaded. Use module load clas12
 else
 	echo "modules are not installed, use brew install modules"
 fi

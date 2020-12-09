@@ -29,7 +29,8 @@ source ~/myenv/zfunctions.env
 zmodules=/usr/local/opt/modules/init/zsh
 case `hostname -s` in
 	ifarm1801|ifarm1801|ifarm1802|ifarm1901)
-		zmodules=/group/clas12/packages/setup.sh
+                zmodules=/group/clas12/packages/setup.sh
+                module use /apps/modulefiles
 		;;
 	casettaMini|MauriMBP)
 		inspiration

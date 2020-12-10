@@ -31,6 +31,7 @@ case `hostname -s` in
 	ifarm1801|ifarm1801|ifarm1802|ifarm1901)
                 zmodules=/group/clas12/packages/setup.sh
                 module use /apps/modulefiles
+                echo "To use clas12 software: module load clas12"
 		;;
 	casettaMini|MauriMBP)
 		inspiration
@@ -54,7 +55,7 @@ esac
 
 if test -f "$zmodules"; then
 	source "$zmodules"
-	echo ZSH Modules Loaded. Use module load clas12
+	echo ZSH Modules Loaded.
 else
 	echo "modules are not installed, use brew install modules"
 fi

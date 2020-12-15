@@ -34,24 +34,31 @@ case `hostname -s` in
                 echo "To use clas12 software: module load clas12"
 		;;
 	casettaMini|MauriMBP)
-		inspiration
+#		inspiration
 		;;
     mauri-imac|enpungarombp)
         export JLAB_VERSION=devel
         export CLAS12TAG=4.4.0
-
         ;;
 esac
 
 # username
 case `hostname -s` in
-    casettaMini)
+    casettaMini|)
         export chi=maritino
         ;;
     mauri-imac|enpungarombp|MauriMBP|ifarm1801|ifarm1801|ifarm1802|ifarm1901)
         export chi=ungaro
         ;;
 esac
+
+# osrelease
+case `hostname -s` in
+	casettaMini|MauriMBP|mauri-imac|enpungarombp)
+			export OSRELEASE=$(~/myenv/osrelease.py)
+		;;
+esac
+
 
 if test -f "$zmodules"; then
 	source "$zmodules"

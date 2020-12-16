@@ -24,12 +24,6 @@ if platform.system() == 'Darwin':
 	# Thread model: posix
 	# InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
-#    clangVersion = 'clang --version'
-#    stream = os.popen(clangVersion)
-#    output = stream.readlines()
-#    clangVersions = output[0].split(' ')
-#    compilerVersion = 'clang' + clangVersions[3]
-
 	compiler = os.popen('clang --version').readlines()[0] # first line of output above
 	compilerVersion = 'clang' + compiler.split()[3] # clang version, see above
 

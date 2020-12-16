@@ -33,14 +33,10 @@ case `hostname -s` in
                 module use /apps/modulefiles
                 echo "To use clas12 software: module load clas12"
 		;;
-	casettaMini|MauriMBP)
-#		inspiration
+	casettaMini|MauriMBP|mauri-imac|enpungarombp)
+		inspiration
 		;;
-    mauri-imac|enpungarombp)
-        export JLAB_VERSION=devel
-        export CLAS12TAG=4.4.0
-        ;;
-esac
+ esac
 
 # username
 case `hostname -s` in

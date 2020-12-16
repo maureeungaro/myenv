@@ -8,32 +8,32 @@ compilerVersion = ''
 
 # Darwin
 if platform.system() == 'Darwin':
-    # Getting macos version
-    # platform.mac_ver() returns:
-    # ('10.15.3', ('', '', ''), 'x86_64')
-    version, dummy1, dummy2 = platform.mac_ver()
-    major, minor, tooSmall = version.split('.')
-    osreleasVersion = 'macosx' + major + '.' + minor
+	# Getting macos version
+	# platform.mac_ver() returns:
+	# ('10.15.3', ('', '', ''), 'x86_64')
+	version = platform.mac_ver()[0]
+	# Examples: 10.15.3 or 11.1
+	tags = version.split('.')
+	osreleasVersion = 'macosx' + tags[0] + '.' + tags[1]
 
-    # Getting clang version
-    # This assumes a return from clang like this:
-    #
-    # Apple clang version 11.0.0 (clang-1100.0.33.17)
-    # Target: x86_64-apple-darwin19.3.0
-    # Thread model: posix
-    # InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+	# Getting clang version
+	# This assumes a return from clang like this:
+	#
+	# Apple clang version 11.0.0 (clang-1100.0.33.17)
+	# Target: x86_64-apple-darwin19.3.0
+	# Thread model: posix
+	# InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
-    clangVersion = 'clang --version'
-    stream = os.popen(clangVersion)
-    output = stream.readlines()
-    clangVersions = output[0].split(' ')
-    compilerVersion = 'clang' + clangVersions[3]
+#    clangVersion = 'clang --version'
+#    stream = os.popen(clangVersion)
+#    output = stream.readlines()
+#    clangVersions = output[0].split(' ')
+#    compilerVersion = 'clang' + clangVersions[3]
+
+	compiler = os.popen('clang --version').readlines()[0] # first line of output above
+	compilerVersion = 'clang' + compiler.split()[3] # clang version, see above
 
 elif platform.system() == 'Linux':
-
-# deprecated in 3.8:
-#    flavor,version,variant = platform.linux_distribution()
-#    osreleasVersion = flavor.replace('Linux','').strip() + version
 
     if os.path.exists('/etc/redhat-release'):
         with open('/etc/redhat-release') as f:

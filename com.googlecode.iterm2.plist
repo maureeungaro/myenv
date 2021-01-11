@@ -909,7 +909,7 @@
 					<key>parameter</key>
 					<string></string>
 					<key>regex</key>
-					<string>jlab</string>
+					<string>ftp.jlab.org</string>
 				</dict>
 				<dict>
 					<key>action</key>
